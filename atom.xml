@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="https://github.com/jiruiya.github.io/jiruiya.io/atom.xml" rel="self"/>
+  <link href="https://jiruiya.github.io/jiruiya.io/atom.xml" rel="self"/>
   
-  <link href="https://github.com/jiruiya.github.io/jiruiya.io/"/>
+  <link href="https://jiruiya.github.io/jiruiya.io/"/>
   <updated>2022-04-19T09:47:45.870Z</updated>
-  <id>https://github.com/jiruiya.github.io/jiruiya.io/</id>
+  <id>https://jiruiya.github.io/jiruiya.io/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://github.com/jiruiya.github.io/jiruiya.io/2022/04/19/hello-world/"/>
-    <id>https://github.com/jiruiya.github.io/jiruiya.io/2022/04/19/hello-world/</id>
+    <link href="https://jiruiya.github.io/jiruiya.io/2022/04/19/hello-world/"/>
+    <id>https://jiruiya.github.io/jiruiya.io/2022/04/19/hello-world/</id>
     <published>2022-04-19T09:47:45.870Z</published>
     <updated>2022-04-19T09:47:45.870Z</updated>
     
