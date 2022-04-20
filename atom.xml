@@ -6,7 +6,7 @@
   <link href="https://jiruiya.github.io/jiruiya.io/atom.xml" rel="self"/>
   
   <link href="https://jiruiya.github.io/jiruiya.io/"/>
-  <updated>2022-04-20T08:27:51.206Z</updated>
+  <updated>2022-04-20T08:31:42.625Z</updated>
   <id>https://jiruiya.github.io/jiruiya.io/</id>
   
   <author>
@@ -21,8 +21,15 @@
     <link href="https://jiruiya.github.io/jiruiya.io/2022/04/20/blog/"/>
     <id>https://jiruiya.github.io/jiruiya.io/2022/04/20/blog/</id>
     <published>2022-04-20T08:27:51.000Z</published>
-    <updated>2022-04-20T08:27:51.206Z</updated>
+    <updated>2022-04-20T08:31:42.625Z</updated>
     
+    <content type="html"><![CDATA[<h1 id="使用git-hexo搭建个人博客所遇到的坑"><a href="#使用git-hexo搭建个人博客所遇到的坑" class="headerlink" title="使用git+hexo搭建个人博客所遇到的坑"></a>使用git+hexo搭建个人博客所遇到的坑</h1><ul><li>1、搭建博可以很简单：可以参考：<a href="https://blog.csdn.net/netlogs/article/details/104184697?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-8.pc_relevant_default&amp;spm=1001.2101.3001.4242.5&amp;utm_relevant_index=11">https://blog.csdn.net/netlogs/article/details/104184697?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-8.pc_relevant_default&amp;spm=1001.2101.3001.4242.5&amp;utm_relevant_index=11</a><h2 id="坑1：博客在本地可以正常执行，但是上传到git，排版混乱，报错显示资源文件加载不出来"><a href="#坑1：博客在本地可以正常执行，但是上传到git，排版混乱，报错显示资源文件加载不出来" class="headerlink" title="坑1：博客在本地可以正常执行，但是上传到git，排版混乱，报错显示资源文件加载不出来"></a>坑1：博客在本地可以正常执行，但是上传到git，排版混乱，报错显示资源文件加载不出来</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Failed to load resource: the server responded with a status of 404 ()</span><br></pre></td></tr></table></figure>根据错误显示，找不到资源文件，但是资源文件就是在git上的啊，要么是权限问题，要么是路径没有找对。<br>因为在git项目上是public，所以不存在权限问题，肯定是路径问题，尝试过很多办法，但是依然无果。后来在一篇博客里面找到关于路径的介绍：<br>在_config.yml文件里面，<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://jiruiya.github.io/jiruiya.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/jiruiya.io/</span></span><br></pre></td></tr></table></figure>设置了url，但是不知道为啥我的这个文件里面没有root这个关键字，万般无奈，手动添加，添加即成功。<h2 id="关于设置主题"><a href="#关于设置主题" class="headerlink" title="关于设置主题"></a>关于设置主题</h2>仅仅需要找到主题，下载并且添加到指定theme文件，给文件夹设置一个简单的名字，然后将改名字写在配置文件里面<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span></span><br></pre></td></tr></table></figure>然后<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br><span class="line">hexo s #本地展示</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;使用git-hexo搭建个人博客所遇到的坑&quot;&gt;&lt;a href=&quot;#使用git-hexo搭建个人博客所遇到的坑&quot; class=&quot;headerlink&quot; title=&quot;使用git+hexo搭建个人博客所遇到的坑&quot;&gt;&lt;/a&gt;使用git+hexo搭建个人博客所遇到的坑&lt;/</summary>
+      
     
     
     
